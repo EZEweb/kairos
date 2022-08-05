@@ -41,7 +41,7 @@ a:focus {
 .back-to-top {
     position: fixed;
     display: none;
-    background: #D5B981;
+    background: #572c3b;
     width: 44px;
     height: 44px;
     text-align: center;
@@ -307,7 +307,7 @@ a:focus {
 }
 
 .hero .hero-text .btn:hover {
-    color: #D5B981;
+    color: white;
     background: #000000;
 }
 
@@ -607,6 +607,44 @@ a:focus {
     z-index: 2;
 }
 
+.hero .about-img {
+    position: relative;
+    width: 50%;
+    height: 70%;
+    margin: 160px 0 0 60px;
+}
+
+.hero .about-img img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.hero .about-img::before {
+    position: absolute;
+    content: "";
+    top: -60px;
+    right: 60px;
+    bottom: 60px;
+    left: -60px;
+    background: #1d2434;
+    z-index: 0;
+}
+
+.hero .about-img::after {
+    position: absolute;
+    content: "";
+    top: -30px;
+    right: 30px;
+    bottom: 30px;
+    left: -30px;
+    background: transparent;
+    border: 1px solid #ffffff;
+    z-index: 2;
+}
+
 .about .about-text p {
     font-size: 16px;
 }
@@ -644,6 +682,7 @@ a:focus {
 .service {
     position: relative;
     width: 100%;
+    background: #000000;
     padding: 45px 0 15px 0;
 }
 
@@ -667,6 +706,9 @@ a:focus {
     object-fit: cover;
 }
 
+.service h2{
+    color: white;
+}
 .service .service-img::after {
     position: absolute;
     content: "";
@@ -684,12 +726,14 @@ a:focus {
     padding: 25px 15px 15px 15px;
     font-size: 25px;
     font-weight: 700;
+    color: white;
 }
 
 .service .service-item p {
     margin: 0;
     padding: 0 25px 25px 25px;
     font-size: 16px;
+    color: white;
 }
 
 .service .service-item a.btn {
@@ -698,17 +742,17 @@ a:focus {
     padding: 10px 20px;
     font-size: 14px;
     font-weight: 600;
-    color: #1d2434;
-    border: 2px solid #1d2434;
+    color: white;
+    border: 2px solid white;
     border-radius: 0;
     background: none;
     transition: .3s;
 }
 
 .service .service-item:hover a.btn {
-    color: #D5B981;
-    background: #1d2434;
-    border-color: #1d2434;
+    color: #ffffff;
+    background: #4A0E23;
+    border-color: #4A0E23;
 }
 
 
