@@ -4,7 +4,6 @@
 body {
     color: #797979;
     background: #ffffff;
-    font-family: 'Open Sans', sans-serif;
 }
 
 h1,
@@ -14,13 +13,18 @@ h4,
 h5, 
 h6 {
     color: #1d2434;
+    font-family: 'Montserrat', sans-serif;
 }
 
 a {
     color: #454545;
+    font-family: 'Cambria', sans-serif;
     transition: .3s;
 }
 
+p{
+    font-family: 'Cambria', sans-serif;
+}
 a:hover,
 a:active,
 a:focus {
@@ -41,7 +45,7 @@ a:focus {
 .back-to-top {
     position: fixed;
     display: none;
-    background: #572c3b;
+    background: #572c3b5c;
     width: 44px;
     height: 44px;
     text-align: center;
@@ -453,12 +457,12 @@ a:focus {
 
 @media (max-width: 575.98px) {
     .hero .hero-text h1 {
-        font-size: 25px;
+        font-size: 42px;
         font-weight: 600;
     }
     
     .hero .hero-text p {
-        font-size: 14px;
+        font-size: 18px;
     }
     
     .hero .hero-text .btn {
